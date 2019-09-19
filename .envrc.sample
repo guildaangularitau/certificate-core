@@ -1,4 +1,0 @@
-export SAVE_DIR=./documents
-export EVENT_ID=5c55fa3eb3e3940036c39bfb
-export MONGO_URI=
-export MONGO_DBNAME=
