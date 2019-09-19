@@ -17,17 +17,18 @@ async function createCertificate (row) {
       name: toCase.titleCase(row.eventName),
       date: row.date,
       hours: row.hours,
-      id: row.id
+      id: row.eventId
     },
     user: {
-      name: toCase.titleCase(row.userName)
+      name: toCase.titleCase(row.userName),
+      email: row.email
     }
   }
 
   data.event.date = moment(data.event.date).format('DD [de] MMMM [de] YYYY')
   data.event.date = toCase.titleCase(data.event.date)
 
-  createFile(`${Math.random()*100}`, renderTemplate(template, data), baseDir).then(() => console.log(`File ${data.event.name} created`))
+  createFile(`${data.user.email}`, renderTemplate(template, data), baseDir).then(() => console.log(`File ${data.event.name} created`))
 }
 
 createBaseDirectory(baseDir)
