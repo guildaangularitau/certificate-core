@@ -1,68 +1,104 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Certificado</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Certificado</title>
 
-  <style>
-    * {
-      font-family: Arial, Helvetica, sans-serif;
-    }
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Noto+Serif&display=swap');
 
-    .colored {
-      background-color: #fce4d6;
-    }
+        * {
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
-    .centered {
-      text-align: center;
-    }
+        html,
+        body,
+        #root {
+            min-height: 100%;
+        }
 
-    .company h3 {
-      margin-bottom: 0;
-      padding-bottom: 0;
-    }
+        body {
+            background: #000 url('file:///Users/Matheus/devCertificate-core/templates/FundoFacebook.png') no-repeat;
+            background-size: cover;
+            -webkit-font-smoothing: antialiased !important;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
 
-    .schedule thead tr th {
-      background-color: #162154;
-      color: white;
-      border: 2px solid rgb(206, 206, 206);
-      padding: 5px;
-    }
+        .title {
+            font-family: 'Noto Serif', serif;
+            font-size: 50pt;
+            color: #FFF;
+            padding-top: 100px;
+        }
 
-    .schedule tbody tr td {
-      border: 2px solid rgb(206, 206, 206);
-      padding: 5px;
-    }
+        .name {
+            font-family: 'Noto Serif', serif;
+            font-size: 40pt;
+            text-shadow: 3px 5px #000;
+            color: #FFF;
+            margin-top: 80px;
+            margin-bottom: 70px;
+        }
 
-    .schedule table {
-      margin: 0 auto;
-      width: 100%;
-    }
+        .number {
+            font-family: 'Noto Serif', serif;
+            font-size: 30pt;
+            text-shadow: 0.5px 1px #000;
+            color: #FFF;
+        }
 
-    .schedule {
-      margin-top: 0;
-      padding: 0;
-    }
-  </style>
+        .meetup_title {
+            font-family: 'Noto Serif', serif;
+            font-size: 35pt;
+            text-shadow: 1px 1px #000;
+            color: #00cde8;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .meetup_day {
+            font-family: 'Noto Serif', serif;
+            font-size: 35pt;
+            text-shadow: 1px 1px #000;
+            color: #00cde8;
+        }
+
+        .logo-margin {
+            margin-bottom: 100px;
+        }
+
+        .logo {
+            width: 50%;
+            height: 40%;
+            margin-top: 70px;
+        }
+    </style>
+
 </head>
 
 <body>
-  <div class="title colored centered">
-    <h1>Certificado de participação </h1>
-  </div>
+    <div>
+        <span class="title">CERTIFICADO DE PARTICIPAÇÃO</span>
+    </div>
 
-  <div class="subtitle centered">
-    <h3>talo José Gonçalves De Oliveira</h3>
-    <h5>Participou do 35º meetup de Reat 360</h3>
-  </div>
+    <span class="name">Italo José Gonçalves De Oliveira</span>
+    <span class="number">Participou do 35º Meetup Developer Circles</span>
 
-  <div class="company colored centered">
-    <h3>No dia 27 De Fevereiro De 2014 com carga de 5 horas</h3>
-  </div>
+    <span class="meetup_title">DevOps para AI</span>
 
+    <div>
+        <span class="number logo-margin">No dia 27 De Fevereiro De 2014 com carga horária de 5 horas</span>
+    </div>
+
+    <img class="logo" src="./DeveloperCirclesSoPa_3.png" />
 </body>
 
 </html>
