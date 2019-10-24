@@ -3,7 +3,7 @@ const moment = require('moment')
 const args = require('yargs').argv;
 const csv = require('csv-parser');
 const toCase = require('change-case')
-const template = fs.readFileSync('./templates/devCSP1.ejs').toString()
+const template = fs.readFileSync('./templates/devCSP.ejs').toString()
 const { createBaseDirectory, createFile, renderTemplate } = require('./common')
 const renderer = require('ejs')
 
