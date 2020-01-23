@@ -19,11 +19,12 @@
       display: flex;
       text-align: center;
       align-items: center;
-      background-size: contain;
       flex-direction: column;
+      background-size: cover;
       justify-content: center;
+      background-position: center;
       -webkit-font-smoothing: antialiased !important;
-      background: #000 url('https://i.imgur.com/M4UY1P9.png') repeat;
+      background-image: url('https://i.imgur.com/M4UY1P9.png');
     }
 
     .title {
@@ -31,6 +32,10 @@
       font-size: 35px;
       color: #FFF;
       padding-top: 100px;
+    }
+
+    .title_container{
+      padding-top: 50px;
     }
 
     .div-name {
@@ -90,7 +95,7 @@
 </head>
 
 <body>
-  <div>
+  <div class="title_container">
     <span class="title">CERTIFICADO DE PARTICIPAÇÃO</span>
   </div>
 
@@ -99,7 +104,7 @@
       <span class="name"><%= user.name %></span>
     </div>
     <div class="div-number">
-      <span class="number">Participou do <%= event.id %>º Meetup Developer Circles</span>
+      <span class="number">Participou do <%= event.id %>º Meetup Facebook Developer Circles, sobre</span>
     </div>
     <div class="div_meetup_title">
       <span class="meetup_title"><%= event.name %></span>
@@ -107,7 +112,7 @@
   </div>
 
   <div>
-    <span class="number-meetup">No dia <%= event.date%> com carga horária de <%= event.hours %> horas</span>
+    <span class="number-meetup">No dia <%= event.date.toLowerCase() %> com carga horária de <%= event.hours %> horas</span>
   </div>
 
   <div class="div_logo">
