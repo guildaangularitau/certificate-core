@@ -5,7 +5,6 @@ const csv = require('csv-parser');
 const toCase = require('change-case')
 const template = fs.readFileSync('./templates/devCSP.ejs').toString()
 const { createBaseDirectory, createFile, renderTemplate } = require('./common')
-const renderer = require('ejs')
 
 moment.locale('pt');
 

@@ -7,7 +7,7 @@ function createFile (fileName, htmlContent, baseFolder) {
   console.log(`Creating PDF file: ${fileName}.pdf at ${path.resolve(baseFolder, `${fileName}.pdf`)}`)
   return new Promise((resolve, reject) => {
     pdf
-      .create(htmlContent, { height: '5.85in', width: '9in',timeout: 900000 })
+      .create(htmlContent, { height: '4.308in', width: '9in',timeout: 900000 })
       .toFile(path.resolve(baseFolder, `${fileName}.pdf`), (err, file) => {
         if (err) reject(err)
         resolve(file)
