@@ -3,7 +3,7 @@ const moment = require('moment')
 const args = require('yargs').argv;
 const csv = require('csv-parser');
 const toCase = require('change-case')
-const template = fs.readFileSync('./templates/devCSP.ejs').toString()
+const template = fs.readFileSync('./templates/TemplateCertificate.ejs').toString()
 const { createBaseDirectory, createFile, renderTemplate } = require('./common')
 
 moment.locale('pt');
