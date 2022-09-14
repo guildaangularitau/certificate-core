@@ -1,4 +1,4 @@
-# DevCertificate generator core
+# Certificate generator core
 
 It's a simple CLI o generate meetups/events certificates for attendees
 
